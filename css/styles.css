@@ -47,7 +47,6 @@ body {
     height: var(--header-height);
     display: flex;
     align-items: center;
-    background: linear-gradient(to bottom, rgba(247, 246, 245, 1) 60%, rgba(247, 246, 245, 0));
     z-index: 30;
     opacity: 0;
     visibility: hidden;
@@ -102,7 +101,6 @@ body {
     text-align: center;
     z-index: 2;
     position: relative;
-    transform: translateY(-70px);
     padding: 20px 20px 40px 20px;
 }
 
@@ -127,12 +125,12 @@ body {
     object-fit: cover;
     opacity: 0.95;
     z-index: 1;
-    content: url('../img/lilac-frame-desktop.png');
+    content: url('../img/tepih-1.png');
 }
 
 .hero-bismillah {
     width: 200px;
-    padding-top: 30px;
+    padding-top: 150px;
 }
 
 @media (max-width: 768px) {
@@ -252,11 +250,7 @@ body {
     }
 
     .hero-decor {
-        content: url('../img/lilac-frame-mobile.png');
-    }
-
-    .hero-inner {
-        background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, rgb(255, 255, 255, 0.6) 10%, rgb(255, 255, 255, 0.6) 90%, rgba(255, 255, 255, 0) 100%);
+        content: url('../img/tepih-1.png');
     }
 
     .panel .panel-grid {

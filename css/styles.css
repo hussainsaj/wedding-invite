@@ -1,7 +1,7 @@
 /* Custom Properties
    ========================================================================== */
 :root {
-    --bg: #f7f6f5;
+    --bg: #ffe6d2;
     --accent: #6b5b95;
     --text: #121212;
     --header-height: 88px;
@@ -167,7 +167,7 @@ body {
 }
 
 .panel:nth-child(odd) {
-    background-color: #efedeb;
+    background-color: #faddc8;
 }
 
 .panel-grid {

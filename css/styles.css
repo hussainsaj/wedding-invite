@@ -239,7 +239,7 @@ body {
     color: var(--text);
 }
 
-.rsvp-list a {
+#containers a {
     color: var(--accent);
     text-decoration: none;
 }

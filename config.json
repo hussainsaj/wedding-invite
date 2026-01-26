@@ -52,12 +52,16 @@
   },
   "rsvps": {
     "bride": [
-      { "name": "Name 1", "phone_display": "+92 0100 000000", "phone": "92100000000" },
-      { "name": "Name 2", "phone_display": "+92 0100 000000", "phone": "92100000000" }
+      { "name": "Muhammad Afzal", "phone_display": "+92 333 9001050", "phone": "923339001050" },
+      { "name": "Muhammad Ahsan Afzal", "phone_display": "+92 315 9102477", "phone": "923159102477" },
+      { "name": "Muhammad Sulman", "phone_display": "+92 333 4445415", "phone": "923334445415" },
+      { "name": "Abid Pervaiz", "phone_display": "+92 321 8431711", "phone": "923218431711" },
+      { "name": "Khizer Iqbal", "phone_display": "+92 300 8542230", "phone": "923008542230" },
+      { "name": "Rashid Latif", "phone_display": "+1 (772) 341-5781", "phone": "17723415781" }
     ],
     "groom": [
-      { "name": "Name 1", "phone_display": "+44 07000 00000", "phone": "44700000000" },
-      { "name": "Name 2", "phone_display": "+44 07000 00000", "phone": "44700000000" }
+      { "name": "Naila Sajid", "phone_display": "+44 7417 415736", "phone": "447417415736" },
+      { "name": "Safdar Ali", "phone_display": "+92 333 5131970", "phone": "923335131970" }
     ]
   }
 }

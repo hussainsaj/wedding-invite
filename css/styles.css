@@ -47,6 +47,7 @@ body {
     height: var(--header-height);
     display: flex;
     align-items: center;
+    background: linear-gradient(to bottom, rgba(255, 230, 210, 1) 60%, rgba(255, 230, 210, 0));
     z-index: 30;
     opacity: 0;
     visibility: hidden;
@@ -251,13 +252,15 @@ body {
 
     .hero-decor {
         content: url('../img/tepih-1.png');
+        height: 80%;
+    }
+
+    .hero-bismillah {
+        width: 200px;
+        padding-top: 30px;
     }
 
     .panel .panel-grid {
         padding: 0 20px;
-    }
-
-    .rsvp {
-        padding: 56px 24px;
     }
 }

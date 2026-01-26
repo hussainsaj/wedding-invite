@@ -23,31 +23,35 @@ function createRSVPInner(party, list) {
 // container where events are rendered (used if we need to append a section).
 function renderRSVP(config, eventsContainer) {
     const party = getPartyFromUrl();
+    let rsvpContainer = ''
+    
     if (party) {
         const rsvps = (config.rsvps && config.rsvps[party]) ? config.rsvps[party] : null;
         if (rsvps && Array.isArray(rsvps) && rsvps.length) {
-            const existingRsvpEl = document.getElementById('rsvp');
             const innerHtml = createRSVPInner(party, rsvps);
-            if (existingRsvpEl) {
-                existingRsvpEl.classList.add('rsvp');
-                existingRsvpEl.innerHTML = `<div class="container"><div class="panel-grid"><article>${innerHtml}</article></div></div>`;
-                
-            } else if (eventsContainer) {
-                const rsvpHtml = `
-                    <section id="rsvp" class="panel rsvp-panel">
-                        <div class="container">
-                            <div class="panel-grid">
-                                <article>
-                                    ${innerHtml}
-                                </article>
-                            </div>
+            rsvpContainer = `
+                <section id="rsvp" class="panel rsvp-panel">
+                    <div class="container">
+                        <div class="panel-grid">
+                            <article>${innerHtml}</article>
                         </div>
-                    </section>
+                    </div>
+                </section>
                 `;
-                eventsContainer.insertAdjacentHTML('beforeend', rsvpHtml);
-            }
         }
     }
+
+    rsvpContainer += `
+        <section id="ending-message" class="panel rsvp">
+        <div class="container">
+            <div class="panel-grid">
+            <h2>We hope you'll join us on this special day.</h2>
+            </div>
+        </div>
+        </section>
+    `;
+
+    document.getElementById('walima').insertAdjacentHTML('afterend', rsvpContainer);
 }
 
 export { renderRSVP };

@@ -1,53 +1,53 @@
 {
   "events": {
     "mehndi-bride": {
-      "title": "Mehndi",
+      "title": "Mehndi/Nikah",
       "date": "Thursday 26th of March 2026",
-      "time": "7:00 PM",
-      "venue": "Venue name",
-      "address": "Nowshera",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum vulputate enim quis leo egestas mollis. In eu quam eget arcu sollicitudin facilisis."
+      "time": "6:00 PM",
+      "venue": "House no. B21",
+      "address": "A.S.C Colony Nowshera Cantt, KPK",
+      "address_url": "https://www.google.com/maps/place/33.990364,71.999356"
     },
     "mehndi-groom": {
       "title": "Mehndi",
       "date": "Thursday 26th of March 2026",
-      "time": "7:00 PM",
+      "time": "6:00 PM",
       "venue": "Venue name",
       "address": "Islamabad",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum vulputate enim quis leo egestas mollis. In eu quam eget arcu sollicitudin facilisis."
+      "address_url": "https://maps.google.com/?q=Islamabad"
     },
-    "barat": {
-      "title": "Barat",
+    "baraat": {
+      "title": "Baraat",
       "date": "Friday 27th of March 2026",
       "time": "6:00 PM",
       "venue": "Venue name",
       "address": "Nowshera",
-      "description": "Phasellus eget facilisis mi, sit amet eleifend sem. Vivamus molestie at mi vel fermentum. In auctor magna nec viverra sollicitudin."
+      "address_url": "https://maps.google.com/?q=Nowshera"
     },
-    "valima": {
-      "title": "Valima",
+    "walima": {
+      "title": "Walima",
       "date": "Sunday 29th of March 2026",
       "time": "7:00 PM",
       "venue": "Venue name",
       "address": "Islamabad",
-      "description": "Vestibulum malesuada, velit at tempus pharetra, risus lacus commodo arcu, vel congue augue erat eget urna. Curabitur non aliquet diam."
+      "address_url": "https://maps.google.com/?q=Islamabad"
     }
   },
   "presets": {
     "default": {
-      "events": ["barat", "valima"]
+      "events": ["baraat", "walima"]
     },
     "full-bride": {
-      "events": ["mehndi-bride", "barat", "valima"]
+      "events": ["mehndi-bride", "baraat", "walima"]
     },
     "full-groom": {
-      "events": ["mehndi-groom", "barat", "valima"]
+      "events": ["mehndi-bride", "mehndi-groom", "baraat", "walima"]
     },
     "core-bride": {
-      "events": ["barat", "valima"]
+      "events": ["baraat", "walima"]
     },
     "core-groom": {
-      "events": ["barat", "valima"]
+      "events": ["baraat", "walima"]
     }
   },
   "rsvps": {

@@ -4,7 +4,7 @@ import { renderRSVP } from './rsvp.js';
 // Function to create event section HTML
 function createEventSection(eventId, content) {
     return `
-        <section id="${eventId}" class="panel">
+        <section id="${eventId}" class="panel events">
             <div class="container">
                 <div class="panel-grid">
                     <article>

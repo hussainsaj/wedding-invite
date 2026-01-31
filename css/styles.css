@@ -156,13 +156,14 @@ body {
 }
 
 .bottom-strip {
-    height: 70px;
+    width: 100%;
+    height: auto;
     margin-top: 30px;
 }
 
 #ending-message {
     padding-bottom: 0px;
-    background: linear-gradient(180deg,rgba(255, 230, 210, 1) 87%, rgba(175, 80, 80, 1) 94%);
+    background: linear-gradient(180deg, var(--panel-bg-odd) 87%, var(--bg) 94%);
 
 }
 
@@ -283,13 +284,13 @@ body {
     }
 
     .hero-decor {
-        content: url('../img/tepih-1.png');
+        content: url('../img/tepih-3.png');
         height: 80%;
     }
 
     .hero-bismillah {
         width: 200px;
-        padding-top: 100px;
+        padding-top: 120px;
     }
 
     .panel .panel-grid {
@@ -298,5 +299,9 @@ body {
 
     .button {
         padding: 10px 20px;
+    }
+
+    .bottom-strip {
+        content: url('../img/bottom-strip-short.png');
     }
 }

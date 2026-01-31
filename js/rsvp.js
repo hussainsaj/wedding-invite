@@ -48,11 +48,15 @@ function renderRSVP(config) {
                 <h2>We hope you'll join us on this special day.</h2>
                 </div>
             </div>
-            <img src="img/bottom-strip.png" alt="bottom strip" class="bottom-strip"/>
+
+            <div class="bottom-strip-container">
+                <img src="img/bottom-strip-long.png" alt="bottom strip" class="bottom-strip"/>
+            </div>
+            
         </section>
     `;
 
-    document.getElementById('walima').insertAdjacentHTML('afterend', rsvpContainer);
+    document.getElementsByClassName('events')[document.getElementsByClassName('events').length - 1].insertAdjacentHTML('afterend', rsvpContainer);
 }
 
 export { renderRSVP };

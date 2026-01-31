@@ -25,40 +25,22 @@ async function loadConfig() {
     }
 }
 
-// Function to get preset from URL
-function getPresetFromUrl() {
+// Function to get events from URL
+function getEventsFromUrl() {
     const urlParams = new URLSearchParams(window.location.search);
-    // Read the new query parameters: `tier` and `party`.
-    const tier = urlParams.get('tier');
-    const party = urlParams.get('party');
-
-    const allowedTiers = new Set(['core', 'full']);
-    const allowedParties = new Set(['bride', 'groom']);
-
-    if (tier && party && allowedTiers.has(tier) && allowedParties.has(party)) {
-        // Construct preset name like `full-bride` or `core-groom`
-        return `${tier}-${party}`;
-    }
-
+    
     // Fallback to legacy `preset` param or default
-    return urlParams.get('preset') || 'default';
+    if (urlParams.get('events')) {
+        return urlParams.get('events').split(',')
+    } else {
+        return ['baraat','walima']
+    }
 }
 
 // Function to get the party (bride/groom) from URL
-function getPartyFromUrl() {
+function getRSVPFromUrl() {
     const urlParams = new URLSearchParams(window.location.search);
-    const party = urlParams.get('party');
-    const allowedParties = new Set(['bride', 'groom']);
-    if (party && allowedParties.has(party)) {
-        return party;
-    }
-
-    // Try to infer party from legacy `preset` param (e.g., `full-bride`)
-    const preset = urlParams.get('preset');
-    if (preset && preset.endsWith('-bride')) return 'bride';
-    if (preset && preset.endsWith('-groom')) return 'groom';
-
-    return null;
+    return urlParams.get('rsvp') || '';
 }
 
-export { loadConfig, getPresetFromUrl, getPartyFromUrl };
+export { loadConfig, getEventsFromUrl, getRSVPFromUrl };

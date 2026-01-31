@@ -1,7 +1,9 @@
 /* Custom Properties
    ========================================================================== */
 :root {
-    --bg: #ffe6d2;
+    --bg: #af5050;
+    --panel-bg: #ffe6d2;
+    --panel-bg-odd: #faddc8;
     --accent: #af5050;
     --text: #121212;
     --header-height: 88px;
@@ -32,7 +34,7 @@ body {
 
 .button {
   text-decoration: none;
-  background-color: var(--bg);
+  background-color: var(--panel-bg);
   color: var(--accent);
   padding: 20px 40px;
   border: 1px solid var(--accent);
@@ -41,7 +43,7 @@ body {
 
 .button:hover {
   background-color: var(--accent);
-  color: var(--bg);
+  color: var(--panel-bg);
 }
 
 /* Layout
@@ -110,6 +112,7 @@ body {
     place-items: center;
     position: relative;
     padding: 40px 0;
+    background-color: var(--panel-bg);
 }
 
 .hero-inner {
@@ -152,6 +155,17 @@ body {
     padding-top: 50px;
 }
 
+.bottom-strip {
+    height: 70px;
+    margin-top: 30px;
+}
+
+#ending-message {
+    padding-bottom: 0px;
+    background: linear-gradient(180deg,rgba(255, 230, 210, 1) 87%, rgba(175, 80, 80, 1) 94%);
+
+}
+
 @media (max-width: 768px) {
 }
 
@@ -182,11 +196,11 @@ body {
 .panel {
     padding: 64px 0;
     width: 100%;
-    background-color: var(--bg);
+    background-color: var(--panel-bg);
 }
 
 .panel:nth-child(odd) {
-    background-color: #faddc8;
+    background-color: var(--panel-bg-odd);
 }
 
 .panel-grid {

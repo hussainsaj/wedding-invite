@@ -3,51 +3,30 @@
     "mehndi-bride": {
       "title": "Mehndi/Nikah",
       "date": "Thursday 26th of March 2026",
-      "time": "6:00 PM",
-      "venue": "House no. B21",
-      "address": "A.S.C Colony Nowshera Cantt, KPK",
+      "time": "6:30 PM - 10:00 PM",
+      "address": "House no. B21, A.S.C Colony Nowshera Cantt, KPK",
       "address_url": "https://www.google.com/maps/place/33.990364,71.999356"
     },
     "mehndi-groom": {
       "title": "Mehndi",
       "date": "Thursday 26th of March 2026",
       "time": "6:00 PM",
-      "venue": "Venue name",
-      "address": "Islamabad",
+      "address": "Venue name, Islamabad",
       "address_url": "https://maps.google.com/?q=Islamabad"
     },
     "baraat": {
       "title": "Baraat",
       "date": "Friday 27th of March 2026",
       "time": "6:00 PM",
-      "venue": "Venue name",
-      "address": "Nowshera",
-      "address_url": "https://maps.google.com/?q=Nowshera"
+      "address": "House no. B21, A.S.C Colony Nowshera Cantt, KPK",
+      "address_url": "https://www.google.com/maps/place/33.990364,71.999356"
     },
     "walima": {
       "title": "Walima",
       "date": "Sunday 29th of March 2026",
-      "time": "7:00 PM",
-      "venue": "Venue name",
-      "address": "Islamabad",
+      "time": "2:00 PM - 4:00 PM",
+      "address": "Venue name, Islamabad",
       "address_url": "https://maps.google.com/?q=Islamabad"
-    }
-  },
-  "presets": {
-    "default": {
-      "events": ["baraat", "walima"]
-    },
-    "full-bride": {
-      "events": ["mehndi-bride", "baraat", "walima"]
-    },
-    "full-groom": {
-      "events": ["mehndi-bride", "mehndi-groom", "baraat", "walima"]
-    },
-    "core-bride": {
-      "events": ["baraat", "walima"]
-    },
-    "core-groom": {
-      "events": ["baraat", "walima"]
     }
   },
   "rsvps": {

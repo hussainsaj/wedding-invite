@@ -57,6 +57,13 @@ function renderRSVP(config) {
     `;
 
     document.getElementsByClassName('events')[document.getElementsByClassName('events').length - 1].insertAdjacentHTML('afterend', rsvpContainer);
+
+    const panelsCount = document.getElementsByClassName('panel').length
+
+    if (panelsCount % 2 === 1) {
+        document.getElementById('ending-message').style.background = 'linear-gradient(180deg, #faddc8 87%, #af5050 94%)'
+    }
+
 }
 
 export { renderRSVP };

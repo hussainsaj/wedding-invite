@@ -163,7 +163,7 @@ body {
 
 #ending-message {
     padding-bottom: 0px;
-    background: linear-gradient(180deg, var(--panel-bg-odd) 87%, var(--bg) 94%);
+    background: linear-gradient(180deg, var(--panel-bg) 87%, var(--bg) 94%);
 
 }
 

@@ -64,6 +64,7 @@ async function renderRSVP(config) {
         document.getElementById('ending-message').style.background = 'linear-gradient(180deg, #faddc8 87%, #af5050 94%)'
     }
 
+    /*
     let cssVar = window.getComputedStyle(document.body)
 
     function parseSeconds(str) {
@@ -76,10 +77,11 @@ async function renderRSVP(config) {
     }
 
     let transistionDuration = parseSeconds(cssVar.getPropertyValue('--transistion-duration'))
-    
+
     await new Promise(r => setTimeout(r, transistionDuration + 1000));
 
     document.body.style.backgroundColor = cssVar.getPropertyValue('--bg');
+    */
 
 }
 

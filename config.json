@@ -11,7 +11,7 @@
       "title": "Mehndi",
       "date": "Thursday 26th of March 2026",
       "time": "6:00 PM",
-      "address": "Venue name, Islamabad",
+      "address": "Islamabad",
       "address_url": "https://maps.google.com/?q=Islamabad"
     },
     "baraat": {
@@ -24,7 +24,7 @@
     "walima": {
       "title": "Walima",
       "date": "Sunday 29th of March 2026",
-      "time": "2:00 PM - 4:00 PM",
+      "time": "4:00 PM",
       "address": "Venue name, Islamabad",
       "address_url": "https://maps.google.com/?q=Islamabad"
     }

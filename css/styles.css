@@ -9,7 +9,7 @@
     --header-height: 88px;
     --header-height-mobile: 80px;
     --container-width: 1100px;
-    --transistion-duration: 2.5s;
+    --transistion-duration: 1.5s;
 }
 
 /* Base Styles
@@ -307,59 +307,49 @@ body {
     }
 }
 
-.transition-1{
-    animation: var(--transistion-duration) ease 0s normal forwards 1 fadein1;
-}
-.transition-2{
-    animation: var(--transistion-duration) ease 0s normal forwards 1 fadein2;
-}
-.transition-3{
-    animation: var(--transistion-duration) ease 0s normal forwards 1 fadein3;
-}
-.transition-4{
-    animation: var(--transistion-duration) ease 0s normal forwards 1 fadein4;
-}
-.transition-5{
-    animation: var(--transistion-duration) ease 0s normal forwards 1 fadein5;
+/* Shared fade animation */
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
 }
 
-@keyframes fadein1{
-    0% { opacity:0; }
-    20% { opacity:1; }
-    40% { opacity:1; }
-    60% { opacity:1; }
-    80% { opacity:1; }
-    100% { opacity:1; }
+/* Base transition */
+[class^="transition-"] {
+    opacity: 0;
+    animation-name: fadein;
+    animation-duration: var(--transistion-duration);
+    animation-timing-function: ease-out;
+    animation-fill-mode: forwards;
 }
-@keyframes fadein2{
-    0% { opacity:0; }
-    20% { opacity:0; }
-    40% { opacity:1; }
-    60% { opacity:1; }
-    80% { opacity:1; }
-    100% { opacity:1; }
-}
-@keyframes fadein3{
-    0% { opacity:0; }
-    20% { opacity:0; }
-    40% { opacity:0; }
-    60% { opacity:1; }
-    80% { opacity:1; }
-    100% { opacity:1; }
-}
-@keyframes fadein4{
-    0% { opacity:0; }
-    20% { opacity:0; }
-    40% { opacity:0; }
-    60% { opacity:0; }
-    80% { opacity:1; }
-    100% { opacity:1; }
-}
-@keyframes fadein5{
-    0% { opacity:0; }
-    20% { opacity:0; }
-    40% { opacity:0; }
-    60% { opacity:0; }
-    80% { opacity:0; }
-    100% { opacity:1; }
-}
+
+/* Staggered delays for natural flow */
+.transition-1 { animation-delay: 0s;
+    opacity: 0;
+    animation-name: fadein;
+    animation-duration: var(--transistion-duration);
+    animation-timing-function: ease-out;
+    animation-fill-mode: forwards;}
+.transition-2 { animation-delay: 0.2s;
+    opacity: 0;
+    animation-name: fadein;
+    animation-duration: var(--transistion-duration);
+    animation-timing-function: ease-out;
+    animation-fill-mode: forwards; }
+.transition-3 { animation-delay: 0.4s;
+    opacity: 0;
+    animation-name: fadein;
+    animation-duration: var(--transistion-duration);
+    animation-timing-function: ease-out;
+    animation-fill-mode: forwards; }
+.transition-4 { animation-delay: 0.6s;
+    opacity: 0;
+    animation-name: fadein;
+    animation-duration: var(--transistion-duration);
+    animation-timing-function: ease-out;
+    animation-fill-mode: forwards; }
+.transition-5 { animation-delay: 0.8s;
+    opacity: 0;
+    animation-name: fadein;
+    animation-duration: var(--transistion-duration);
+    animation-timing-function: ease-out;
+    animation-fill-mode: forwards; }
